@@ -9,11 +9,14 @@ import java.io.FileNotFoundException;
 
 /**
  * Created by Administrator on 2017/12/28.
+ * 异常测试
  */
 @RestController
 public class ExceptionTestController {
 
-/*    @ExceptionHandler(value = Exception.class)
+/*
+    // 只能对本类中所出现的异常做出处理
+    @ExceptionHandler(value = Exception.class)
     public String error(Exception e){
         return "message is"+e.getMessage();
     }*/

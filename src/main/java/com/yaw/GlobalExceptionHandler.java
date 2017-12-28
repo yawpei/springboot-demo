@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * Created by Administrator on 2017/12/28.
+ * 全局异常处理
  */
 @ControllerAdvice
 public class GlobalExceptionHandler {

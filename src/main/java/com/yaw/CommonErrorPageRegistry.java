@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * Created by Administrator on 2017/12/26.
+ * 修改默认异常响应页面，当拦截对于异常时返回对应的jsp页面
  */
 @Component
 public class CommonErrorPageRegistry implements ErrorPageRegistrar {
