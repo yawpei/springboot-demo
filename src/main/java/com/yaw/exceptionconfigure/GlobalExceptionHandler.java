@@ -1,4 +1,4 @@
-package com.yaw;
+package com.yaw.exceptionconfigure;
 
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;

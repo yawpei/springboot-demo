@@ -1,4 +1,4 @@
-package com.yaw;
+package com.yaw.exceptionconfigure;
 
 import org.springframework.boot.web.servlet.ErrorPage;
 import org.springframework.boot.web.servlet.ErrorPageRegistrar;

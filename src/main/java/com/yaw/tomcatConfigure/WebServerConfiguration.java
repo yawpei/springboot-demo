@@ -1,4 +1,4 @@
-package com.yaw;
+package com.yaw.tomcatConfigure;
 
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.context.embedded.EmbeddedServletContainerFactory;
@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Bean;
  * Created by Administrator on 2017/12/26.
  * Tomcat配置方法二
  */
-@SpringBootConfiguration
+//@SpringBootConfiguration
 public class WebServerConfiguration {
     @Bean
     public EmbeddedServletContainerFactory register() {

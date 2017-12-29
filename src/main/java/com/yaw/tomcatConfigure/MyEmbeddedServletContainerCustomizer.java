@@ -1,16 +1,13 @@
-package com.yaw;
+package com.yaw.tomcatConfigure;
 
 import org.apache.catalina.connector.Connector;
 import org.apache.catalina.valves.AccessLogValve;
 import org.apache.catalina.valves.Constants;
-import org.apache.coyote.ProtocolHandler;
 import org.apache.coyote.http11.Http11NioProtocol;
 import org.springframework.boot.context.embedded.ConfigurableEmbeddedServletContainer;
 import org.springframework.boot.context.embedded.EmbeddedServletContainerCustomizer;
 import org.springframework.boot.context.embedded.tomcat.TomcatConnectorCustomizer;
 import org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory;
-import org.springframework.boot.web.servlet.ErrorPage;
-import org.springframework.stereotype.Component;
 
 import java.io.File;
 
@@ -27,7 +24,8 @@ public class MyEmbeddedServletContainerCustomizer implements EmbeddedServletCont
         factory.setBaseDirectory(new File("e:/tomcat/log1/"));
         factory.addContextValves(getAccessLogValve());
     }
-    private AccessLogValve getAccessLogValve(){
+
+    private AccessLogValve getAccessLogValve() {
         AccessLogValve accessLogValve = new AccessLogValve();
         accessLogValve.setDirectory("e:/tomcat/myLog");
         accessLogValve.setEnabled(true);
@@ -37,7 +35,8 @@ public class MyEmbeddedServletContainerCustomizer implements EmbeddedServletCont
         return accessLogValve;
     }
 }
-class MyTomcatConnectorCustomizer implements TomcatConnectorCustomizer{
+
+class MyTomcatConnectorCustomizer implements TomcatConnectorCustomizer {
 
     @Override
     public void customize(Connector connector) {
