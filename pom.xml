@@ -68,12 +68,22 @@
             <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
         <!--自定义springboot starter-->
+        <!-- <dependency>
+             <groupId>com.yaw.redis</groupId>
+             <artifactId>spring-boot-starter-redis</artifactId>
+             <version>1.0-SNAPSHOT</version>
+         </dependency>-->
+        <!--日志-->
+        <!-- <dependency>
+             <groupId>org.apache.logging.log4j</groupId>
+             <artifactId>log4j-core</artifactId>
+             <version>2.9.1</version>
+         </dependency>-->
+        <!--监控和度量-->
         <dependency>
-            <groupId>com.yaw.redis</groupId>
-            <artifactId>spring-boot-starter-redis</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-actuator</artifactId>
         </dependency>
-
     </dependencies>
 
     <build>

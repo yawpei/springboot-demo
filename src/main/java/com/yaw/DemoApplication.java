@@ -1,17 +1,18 @@
 package com.yaw;
 
-import com.yaw.redis.EnableRedis;
+//import com.yaw.redis.EnableRedis;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration;
 import org.springframework.context.ConfigurableApplicationContext;
-import redis.clients.jedis.Jedis;
+//import redis.clients.jedis.Jedis;
 
 /**
  * spring.datasource.type 可以指定哪种数据源，默认支持tomcat (共Tomcat,Hikari,Dbcp,Dbcp2,Generic 五种）
  * jdbcTemplate，执行语句插入数据
+ *
  */
-@EnableRedis
+//@EnableRedis
 @SpringBootApplication(exclude = ErrorMvcAutoConfiguration.class)
 public class DemoApplication {
     public static void main(String[] args) throws Exception {
@@ -35,8 +36,8 @@ public class DemoApplication {
         /*
          * 自定义springbootstarter
          */
-        Jedis jedis = context.getBean(Jedis.class);
-        jedis.set("id","1");
-        System.out.println(jedis.get("id"));
+//        Jedis jedis = context.getBean(Jedis.class);
+//        jedis.set("id","1");
+//        System.out.println(jedis.get("id"));
     }
 }
